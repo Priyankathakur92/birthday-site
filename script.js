@@ -53,3 +53,28 @@ document
     observer.observe(section);
 
 });
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.classList.add("heart");
+
+  heart.innerHTML = "💖";
+
+  // random position
+  heart.style.left = Math.random() * 100 + "vw";
+
+  // random size
+  heart.style.fontSize = (10 + Math.random() * 20) + "px";
+
+  // random speed
+  heart.style.animationDuration = (3 + Math.random() * 3) + "s";
+
+  document.getElementById("hearts-container").appendChild(heart);
+
+  // remove after animation
+  setTimeout(() => {
+    heart.remove();
+  }, 6000);
+}
+
+// generate hearts continuously
+setInterval(createHeart, 300);
