@@ -1,0 +1,571 @@
+html{
+
+    scroll-behavior:smooth;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#07111f;
+
+    color:white;
+
+    font-family:'Poppins',sans-serif;
+
+    overflow-x:hidden;
+}
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+h1{
+
+    font-size:4rem;
+
+    color:#ffd77c;
+
+    margin-bottom:20px;
+    font-family:'Caveat',cursive;
+}
+h2{
+    font-family:'Caveat',cursive;
+}
+
+p{
+
+    margin:8px;
+
+    font-size:1.2rem;
+}
+
+button{
+
+    margin-top:20px;
+
+    padding:15px 30px;
+
+    border:none;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    font-size:18px;
+}
+
+#beginning{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+#stars{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    z-index:-1;
+}
+
+.star{
+
+    position:absolute;
+
+    width:2px;
+
+    height:2px;
+
+    background:white;
+
+    border-radius:50%;
+
+    animation:twinkle infinite alternate;
+}
+
+@keyframes twinkle{
+
+    from{
+        opacity:0.2;
+    }
+
+    to{
+        opacity:1;
+    }
+}
+.story-section{
+
+    padding:100px 20px;
+
+    text-align:center;
+}
+
+.story-section h2{
+
+    font-size:3rem;
+
+    color:#ffd77c;
+
+    margin-bottom:40px;
+}
+
+.chat-container{
+
+    max-width:600px;
+
+    margin:auto;
+}
+
+.message{
+
+    padding:15px;
+
+    border-radius:20px;
+
+    margin:15px;
+
+    width:fit-content;
+
+    max-width:70%;
+}
+
+.left{
+
+    background:#1e2a3a;
+
+    margin-right:auto;
+}
+
+.right{
+
+    background:#7a5c1c;
+
+    margin-left:auto;
+}
+
+.story-text{
+
+    max-width:700px;
+
+    margin:50px auto;
+
+    line-height:2;
+}
+.future-section{
+
+    padding:120px 20px;
+
+    text-align:center;
+}
+
+.future-section h2{
+
+    color:#ffd77c;
+
+    font-size:3rem;
+
+    margin-bottom:50px;
+}
+
+.future-text{
+
+    max-width:800px;
+
+    margin:auto;
+
+    line-height:2.2;
+}
+
+.future-ending{
+
+    color:#ffd77c;
+
+    font-size:1.3rem;
+
+    margin-top:30px;
+}
+.realization-section{
+
+    padding:120px 20px;
+
+    text-align:center;
+}
+
+.realization-section h2{
+
+    color:#ffd77c;
+
+    font-size:3rem;
+
+    margin-bottom:50px;
+}
+
+.realization-text{
+
+    max-width:800px;
+
+    margin:auto;
+
+    line-height:2.3;
+}
+
+.highlight-line{
+
+    color:#ffd77c;
+
+    font-size:1.8rem;
+
+    font-weight:bold;
+
+    margin:30px 0;
+}
+.notice-section{
+
+    padding:120px 20px;
+
+    text-align:center;
+}
+
+.notice-section h2{
+
+    color:#ffd77c;
+
+    font-size:3rem;
+
+    margin-bottom:50px;
+}
+
+.notice-text{
+
+    max-width:850px;
+
+    margin:auto;
+
+    line-height:2.3;
+}
+
+.quote{
+
+    font-size:1.5rem;
+
+    font-style:italic;
+
+    color:#ffd77c;
+}
+.reasons-section{
+
+    padding:120px 20px;
+
+    text-align:center;
+}
+
+.reasons-section h2{
+
+    color:#ffd77c;
+
+    font-size:3rem;
+
+    margin-bottom:60px;
+}
+
+.reasons-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+
+    max-width:1200px;
+
+    margin:auto;
+}
+
+.reason-card{
+
+    background:rgba(255,255,255,0.08);
+
+    padding:25px;
+
+    border-radius:20px;
+
+    line-height:1.8;
+
+    transition:0.3s;
+}
+
+.reason-card:hover{
+
+    transform:translateY(-5px);
+}
+
+.special-reason{
+
+    border:2px solid #ffd77c;
+
+    font-weight:bold;
+}
+.poetry-section{
+
+    padding:120px 20px;
+
+    text-align:center;
+}
+
+.poetry-section h2{
+
+    color:#ffd77c;
+
+    font-size:3rem;
+
+    margin-bottom:60px;
+}
+
+.poem-card{
+
+    max-width:800px;
+
+    margin:40px auto;
+
+    background:rgba(255,255,255,0.08);
+
+    padding:40px;
+
+    border-radius:25px;
+
+    line-height:2.3;
+
+    font-style:italic;
+}
+
+.gold-line{
+
+    color:#ffd77c;
+
+    font-size:1.4rem;
+
+    font-weight:bold;
+}
+.secret-section{
+
+    padding:120px 20px;
+
+    text-align:center;
+}
+
+#secretBtn{
+
+    background:#ffd77c;
+
+    color:black;
+
+    font-weight:bold;
+}
+
+.hidden{
+
+    display:none;
+}
+
+#secretMessage{
+
+    max-width:700px;
+
+    margin:40px auto;
+
+    background:rgba(255,255,255,0.08);
+
+    padding:30px;
+
+    border-radius:20px;
+
+    line-height:2;
+}
+.ending-section{
+
+    padding:150px 20px;
+
+    text-align:center;
+}
+
+.ending-card{
+
+    max-width:900px;
+
+    margin:auto;
+
+    background:rgba(255,255,255,0.08);
+
+    padding:50px;
+
+    border-radius:30px;
+}
+
+.birthday-text{
+
+    color:#ffd77c;
+
+    margin-top:40px;
+
+    margin-bottom:40px;
+
+    font-size:3.5rem;
+}
+
+.child{
+
+    font-size:1.6rem;
+
+    color:#ffd77c;
+
+    margin-top:20px;
+}
+
+.skeleton{
+
+    margin-top:20px;
+
+    font-style:italic;
+}
+#hearts{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:999;
+}
+
+.heart{
+
+    position:fixed;
+
+    bottom:-20px;
+
+    animation:floatHeart 10s linear forwards;
+
+    font-size:20px;
+}
+
+@keyframes floatHeart{
+
+    from{
+
+        transform:translateY(0);
+
+        opacity:1;
+    }
+
+    to{
+
+        transform:translateY(-110vh);
+
+        opacity:0;
+    }
+}
+setInterval(()=>{
+
+    const heart =
+    document.createElement("div");
+
+    heart.className="heart";
+
+    heart.innerHTML="❤️";
+
+    heart.style.left =
+    Math.random()*100+"vw";
+
+    document
+        .getElementById("hearts")
+        .appendChild(heart);
+
+    setTimeout(()=>{
+
+        heart.remove();
+
+    },10000);
+
+},1000);
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(255,255,255,0.07);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    z-index:-2;
+}
+.mountains{
+
+    height:180px;
+
+    width:100%;
+
+    background:#03070d;
+
+    clip-path:polygon(
+    0% 100%,
+    0% 75%,
+    10% 55%,
+    20% 75%,
+    35% 30%,
+    50% 80%,
+    65% 25%,
+    80% 70%,
+    100% 45%,
+    100% 100%
+    );
+}
+.fade-in{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:all 1s ease;
+}
+
+.fade-in.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+}
