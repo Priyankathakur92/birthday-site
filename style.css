@@ -599,9 +599,4 @@ body::before{
     opacity: 0;
   }
 }
-        document.addEventListener("click", function () {
-  const music = document.getElementById("bg-music");
-  if (music) {
-    music.play();
-  }
-});
+        
