@@ -78,3 +78,9 @@ function createHeart() {
 
 // generate hearts continuously
 setInterval(createHeart, 300);
+document.addEventListener("click", function () {
+  const music = document.getElementById("bg-music");
+  if (music) {
+    music.play();
+  }
+});
